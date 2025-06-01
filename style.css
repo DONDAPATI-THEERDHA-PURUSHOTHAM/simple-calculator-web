@@ -1,0 +1,185 @@
+/* General page styling */
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f4f4;
+  color: #ffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 110vh;
+  margin: 20;
+}
+
+/* Calculator container styling */
+.calculator {
+  background:#ffffff;
+  padding: 40px;
+  border-radius: 15px;
+  width: 300px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.7);
+}
+
+/* Display area wrapper */
+.display-wrapper {
+  position: relative;
+  margin-bottom: 10px;
+}
+
+/* Display input field */
+.display {
+  width: 93%;
+  height: 50px;
+  font-size: 24px;
+  padding: 5px 10px;
+  border-radius: 8px;
+  border: none;
+  background: #eaeaea;
+  color: rgba(2, 29, 40, 0.888);
+  font-family: monospace;
+}
+
+/* Blinking cursor animation */
+.blinking-dash {
+  position:absolute;
+  right: 8px;
+  top: 15px;
+  font-size: 25px;
+  color: rgb(11, 50, 11);
+  animation: blink 1s steps(2, start) infinite;
+  user-select: none;
+}
+
+/* Keyframes for blinking animation */
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+/* Button grid layout */
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+/* General button styling */
+button {
+  padding: 14px 0;
+  font-size: 16px;
+  border-radius: 8px;
+  border:#333;
+  background: #e7730e;
+  color: white;
+  cursor: pointer;
+  user-select: none;
+  transition: background 0.3s ease;
+}
+
+/* Hover effect for buttons */
+button:hover:not(:disabled) {
+  background: rgb(233, 160, 86);
+}
+
+/* Disabled button styling */
+button:disabled {
+  background: #aaaaaa;
+  color: #ffffff;
+  cursor: not-allowed;
+}
+
+/* Last result display area */
+.last-result {
+  margin-top: 15px;
+  font-size: 18px;
+  text-align: center;
+}
+
+/* History modal styling */
+.modal {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(146, 212, 240, 0.112);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* Hidden state for modal */
+.modal.hidden {
+  display: none;
+}
+
+/* Modal content styling */
+.modal-content {
+  background:blanchedalmond;
+  padding: 20px;
+  border-radius: 10px;
+  width: 300px;
+  max-height: 80vh;
+  overflow-y: auto;
+  color:coral;
+  font-family: monospace;
+}
+
+/* Close button styling */
+.close-btn {
+  float: right;
+  background: #a00;
+  border: none;
+  padding: 5px 10px;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+/* History list styling */
+#historyList {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 20px;
+}
+
+/* History list item styling */
+#historyList li {
+  margin-bottom: 8px;
+  border-bottom: 1px solid #333;
+  padding-bottom: 5px;
+}
+
+/* Special styling for result button */
+#result{
+    grid-column: span 4;
+    background: #1da04d;
+    color: white;
+    font-size: 19px;
+}
+#result:hover {
+  background: rgb(28, 84, 21);
+}
+
+/* History buttons styling */
+#showHistory{
+    grid-column: span 2;
+    background: #0dafd0;
+    color: white;
+    font-size: 19px;
+}
+#clearHistory{
+    grid-column: span 2;
+    background: #0dafd0;
+    color: white;
+    font-size: 19px;
+}
+#showHistory:hover {
+  background: rgb(28, 84, 21);
+}
+#clearHistory:hover {
+  background: rgb(28, 84, 21);
+}
+
+/* Power button styling */
+#power {
+  background: rgb(203, 10, 29);
+}

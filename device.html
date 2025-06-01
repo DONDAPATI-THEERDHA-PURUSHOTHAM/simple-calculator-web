@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Smart Calculator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Calculator header with custom styling -->
+  <i class="fa fa-calculator" aria-hidden="true">
+    <h1 style="text-align:start; margin-top: 20px;margin-left: 5px;margin-right: 95px;color:coral;font-size: 30px;"><u>Smart Calculator</u></h1>
+  </i>
+  
+  <!-- Main calculator container -->
+  <div class="calculator">
+    <!-- Display area with input field and blinking cursor -->
+    <div class="display-wrapper">
+      <input type="text" class="display" disabled />
+      <span class="blinking-dash">|</span> <!-- Blinking cursor visual -->
+    </div>
+    
+    <!-- Calculator buttons grid -->
+    <div class="buttons">
+      <!-- First row: Trigonometric functions and power button -->
+      <button>sin</button><button>cos</button><button>tan</button><button id="power">Power ON</button>
+      <!-- Second row: Special operations -->
+      <button>%</button><button>√</button><button id="clear">C</button><button id="backspace">←</button>
+      <!-- Number and operation rows -->
+      <button>7</button><button>8</button><button>9</button><button>/</button>
+      <button>4</button><button>5</button><button>6</button><button>*</button>
+      <button>1</button><button>2</button><button>3</button><button>-</button>
+      <button>.</button><button>0</button><button>00</button><button>+</button>
+      <!-- Special function buttons spanning multiple columns -->
+      <button id="result">Result</button>
+      <button id="showHistory">Show History</button>
+      <button id="clearHistory">Clear History</button>
+    </div>
+    
+    <!-- Last result display area -->
+    <div class="last-result">Last Result: <span id="lastResult">None</span></div>
+
+    <!-- History modal (hidden by default) -->
+    <div id="historyModal" class="modal hidden">
+      <div class="modal-content">
+        <button id="closeHistory" class="close-btn">X</button>
+        <h2>Calculation History</h2>
+        <ul id="historyList"></ul>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
