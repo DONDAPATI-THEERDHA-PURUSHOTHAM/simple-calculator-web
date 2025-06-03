@@ -1,4 +1,4 @@
-# Smart Calculator Web 
+# Simple Calculator Web 
 
 ![Calculator Preview](screen 1.png)
 
