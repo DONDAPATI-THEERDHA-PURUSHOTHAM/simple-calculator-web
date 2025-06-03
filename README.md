@@ -1,6 +1,6 @@
 # Simple Calculator Web 
 
-![Calculator Preview](screen 1.png)
+![Calculator Preview](screen1.png)
 
 A responsive web-based calculator with scientific functions, history tracking, and keyboard support.
 
