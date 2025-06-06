@@ -32,5 +32,5 @@ A responsive web-based calculator with scientific functions, history tracking, a
 5. Clear history with "Clear History" button
 
 ## Screenshot
-![Simple Calculator operations](screen 2.png)
-![Simple Calculator operation history](screen 3.pgn)
+![Simple Calculator operations](screen2.png)
+![Simple Calculator operation history](screen3.pgn)
